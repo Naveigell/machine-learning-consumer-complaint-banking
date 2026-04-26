@@ -174,7 +174,9 @@ sgd_model = SGDClassifier(loss='hinge')
 sgd_model.fit(x_train, y_train)
 
 print("Training SGD finished.")
-print("Saving SGD model...")
+print("Classification report:")
+print(classification_report(y_train, sgd_model.predict(x_train)))
+print(f"Saving SGD model to {BEST_MODEL_FILE}...")
 with open(BEST_MODEL_FILE, 'wb') as f:
     pickle.dump(sgd_model, f)
 print("SGD model saved.")
