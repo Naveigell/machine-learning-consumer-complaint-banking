@@ -43,6 +43,12 @@ The application includes:
 - **Confidence Scores**: Shows prediction confidence when available
 - **Responsive Design**: Works on desktop and mobile devices
 
+## Interface
+
+The web application provides a clean and intuitive interface for submitting banking complaints:
+
+![Complaint Form Interface](templates/interfaces/form.png)
+
 ## Model Performance
 
 The application uses the SGD Classifier model with TF-IDF vectorization, which achieved:
